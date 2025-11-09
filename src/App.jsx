@@ -91,7 +91,7 @@ const Header = () => (
             {item}
           </a>
         ))}
-        <a href={resume} className='text-gray-600 hover:text-indigo-600 font-medium transition duration-150' download={resume} >Resume</a>
+        {/* <a href={resume} className='text-gray-600 hover:text-indigo-600 font-medium transition duration-150' download={resume} >Resume</a> */}
       </nav>
     </div>
   </header>
