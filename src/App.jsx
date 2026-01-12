@@ -1,11 +1,11 @@
-import React from 'react';
 import { Plane, Code, Database, Zap, HardHat, Link, Linkedin, Github, Mail } from 'lucide-react';
 import cacic from './assets/cacic.jpg';
 import flightFinder from './assets/cheap-flight-finder.jpg';
 import todo from './assets/task-manager.jpg';
 import profile from './assets/profile_pic.jpg'
-import resume from "./assets/ANDREW-RESUME.pdf"
 import blog from "./assets/blog-space.jpg"
+import blogs from "./assets/Redux-Blog.png"
+// import resume from "./assets/ANDREW-RESUME.pdf"
 
 // --- CONFIGURATION DATA ---
 const PORTFOLIO_DATA = {
@@ -14,7 +14,7 @@ const PORTFOLIO_DATA = {
   summary: "A highly versatile and results-driven Full Stack Developer and Data Analyst with comprehensive experience across the entire development lifecycle. Proven expertise in building scalable web applications, designing interactive dashboards, and leveraging AI/ML for intelligent automation. Passionate about writing clean, high-performance code, integrating complex APIs, and automating repetitive tasks.",
   
   skills: [
-    { name: "Languages & Frameworks", icon: <Code className="w-5 h-5" />, items: ["Python", "JavaScript (ES6+)", "React", "Node.js", "Flask", "Express.js", "HTML5", "CSS3"] },
+    { name: "Languages & Frameworks", icon: <Code className="w-5 h-5" />, items: ["Python", "JavaScript (ES6+)", "React", "Node.js", "Flask", "Express.js", "HTML5", "CSS3", "Redux"] },
     { name: "Databases & Backend", icon: <Database className="w-5 h-5" />, items: ["PostgreSQL", "MongoDB", "SQLite", "SQLAlchemy (ORM)", "RESTful APIs", "JWT Authentication"] },
     { name: "Data & Automation", icon: <Zap className="w-5 h-5" />, items: ["Pandas", "NumPy", "Plotly", "Web Scraping (Selenium)", "OpenAI API", "Twilio", "Email Automation"] },
     { name: "Tools & DevOps", icon: <HardHat className="w-5 h-5" />, items: ["Git", "GitHub", "Docker", "Postman", "AWS", "Azure", "Object-Oriented Programming"] },
@@ -44,6 +44,14 @@ const PORTFOLIO_DATA = {
       githubUrl: "https://github.com/Andrew-nwaneri/flight-finder-FullStack",
       image: flightFinder
     },
+        {
+      title: "Redux Blog",
+      description: "A redux blog developed to display efficient data fetching and caching using RTK Query.",
+      technologies: ["React", "CSS", "Redux Toolkit", "JavaScript"],
+      githubUrl: "https://github.com/Andrew-nwaneri/redux-blog",
+      liveUrl: "https://redux-blog-two.vercel.app/",
+      image: blogs,
+    },
     {
       title: "Resposive Todo-list app",
       description: "Developed a single page Todo-list app using React and CSS to show-case understanding of array operatives, state management and responsive design.",
@@ -53,7 +61,7 @@ const PORTFOLIO_DATA = {
       image: todo
     },
     {
-      title: "Blog Space",
+      title: "Flask Blog",
       description: "Designed and implemented scalable Blog Space using Flask and PostgreSQL. Secured the user database using password hashing (Werkzeug) and implemented JWT for token-based secure access across all CRUD operations.",
       technologies: ["Flask", "PostgreSQL", "SQLAlchemy", "JWT", "Werkzeug", "Bootstrap", "JavaScript"],
       githubUrl: "https://github.com/Andrew-nwaneri/andrew-s-blog",
