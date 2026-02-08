@@ -90,7 +90,7 @@ const PORTFOLIO_DATA = {
     email: "nwaneriandrew@gmail.com",
     linkedin: "https://www.linkedin.com/in/andrew-nwaneri-can7",
     github: "https://github.com/Andrew-nwaneri",
-  }
+  },
 };
 
 // --- COMPONENTS ---
