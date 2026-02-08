@@ -5,6 +5,7 @@ import todo from './assets/task-manager.jpg';
 import profile from './assets/profile_pic.jpg'
 import blog from "./assets/blog-space.jpg"
 import blogs from "./assets/Redux-Blog.png"
+import BME from "./assets/BME.png"
 // import resume from "./assets/ANDREW-RESUME.pdf"
 
 // --- CONFIGURATION DATA ---
@@ -15,19 +16,27 @@ const PORTFOLIO_DATA = {
   
   skills: [
     { name: "Languages & Frameworks", icon: <Code className="w-5 h-5" />, items: ["Python", "JavaScript (ES6+)", "React", "Node.js", "Flask", "Express.js", "HTML5", "CSS3", "Redux"] },
-    { name: "Databases & Backend", icon: <Database className="w-5 h-5" />, items: ["PostgreSQL", "MongoDB", "SQLite", "SQLAlchemy (ORM)", "RESTful APIs", "JWT Authentication"] },
+    { name: "Databases & Backend", icon: <Database className="w-5 h-5" />, items: ["PostgreSQL", "MongoDB", "SQLite", "Prisma (ORM)", "SQLAlchemy (ORM)", "RESTful APIs", "JWT Authentication"] },
     { name: "Data & Automation", icon: <Zap className="w-5 h-5" />, items: ["Pandas", "NumPy", "Plotly", "Web Scraping (Selenium)", "OpenAI API", "Twilio", "Email Automation"] },
     { name: "Tools & DevOps", icon: <HardHat className="w-5 h-5" />, items: ["Git", "GitHub", "Docker", "Postman", "AWS", "Azure", "Object-Oriented Programming"] },
   ],
 
   projects: [
     {
+      title: "The All-In-One Platform for Fitness Coaches",
+      description: "Developing an online Fitness web application to cater to needs of fitness buisness owners by making it seamless to manage trainer / client schedules and sessions.",
+      technologies: ["Node.js", "Express.js", "React", "PostgreSQL", "Prisma (ORM)", "JWT", "Werkzeug", "HTML/CSS", "JavaScript", "Docker"],
+      githubUrl: "https://github.com/Andrew-nwaneri/bme-landing",
+      liveUrl: "https://bme-pi.vercel.app/",
+      image: BME,
+    },
+    {
       title: "E-commerce Retail Platform",
       description: "Developed a secure online foodstuff retail store featuring end-to-end encrypted payment processing. Designed an interactive user-admin database system using Flask and integrated the Flutterwave API for transactions.",
       technologies: ["Flask", "Python", "Flutterwave API", "PostgreSQL", "SQLAlchemy", "JWT", "Werkzeug", "HTML/CSS", "Bootstrap", "JavaScript"],
       githubUrl: "https://github.com/Andrew-nwaneri/cacic-store",
       liveUrl: "https://cacic-synergy.onrender.com/",
-      image: cacic
+      image: cacic,
     },
     {
       title: "Cheap Flight Finder (serverless)",
@@ -35,14 +44,14 @@ const PORTFOLIO_DATA = {
       technologies: ["React", "Node.js", "CSS", "Amadeus API", "JavaScript"],
       githubUrl: "https://github.com/Andrew-nwaneri/flight-finder-serverless",
       liveUrl: "https://cheap-flight-finder.vercel.app/", 
-      image: flightFinder
+      image: flightFinder,
     },
     {
       title: "Cheap Flight Finder (Full-Stack)",
       description: "Engineered a full-stack flight search application using React and Node.js. Successfully integrated and authenticated the Amadeus API to return the cheapest flight options based on complex filtering parameters.",
       technologies: ["React", "Node.js", "CSS", "Express.js", "Amadeus API", "JavaScript", "Axios", "Docker"],
       githubUrl: "https://github.com/Andrew-nwaneri/flight-finder-FullStack",
-      image: flightFinder
+      image: flightFinder,
     },
         {
       title: "Redux Blog",
@@ -58,7 +67,7 @@ const PORTFOLIO_DATA = {
       technologies: ["React", "lucide-react", "CSS"],
       githubUrl: "https://github.com/Andrew-nwaneri/todo-list",
       liveUrl: "https://todo-list-sage-chi.vercel.app/",
-      image: todo
+      image: todo,
     },
     {
       title: "Flask Blog",
@@ -141,7 +150,7 @@ const ProjectCard = ({ project }) => (
           boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)"
         }} 
       /> : <div></div>}
-    <div className="p-6 flex-grow">
+    <div className="p-6 grow">
       
       <h3 className="text-2xl font-bold text-gray-800 mb-3">{project.title}</h3>
       <p className="text-gray-600 mb-4">{project.description}</p>
